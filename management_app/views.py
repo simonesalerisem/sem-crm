@@ -15,9 +15,11 @@ def some_view(request, order_id):
     p = canvas.Canvas(buffer)
     
     # Draw the title on the PDF.
+    
     p.setFont("Helvetica-Bold", 24)  # Set the font to Helvetica, bold, size 24.
     p.drawString(100, 800, f"Order Details #{order_id}")  # Adjust coordinates as necessary.
-
+    p.setFont("Helvetica", 8)
+    p.drawString(100, 790, f"Contactor: {order.customer.contractor}")
     # Reset the font.
     p.setFont("Helvetica", 12)
 
