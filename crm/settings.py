@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-8ej$4#+$fyghzq&@r3cec4!xxh4hl1hjfhdz57=j)j_a2tiea1
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['16.171.244.0', 'localhost']
 
 
 # Application definition
@@ -75,10 +75,21 @@ WSGI_APPLICATION = 'crm.wsgi.application'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 DATABASES = {
+<<<<<<< HEAD
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
+=======
+'default': {
+'ENGINE': 'django.db.backends.postgresql_psycopg2',
+'NAME': 'postgres',
+'USER' : 'sempostgreadmin',
+'PASSWORD' : 'admipn1et2457',
+'HOST' : 'localhost',
+'PORT' : '5432'
+}
+>>>>>>> 46e53bd4e207c52538f6a3cf114b1ffe42af45c6
 }
 
 # Password validation
