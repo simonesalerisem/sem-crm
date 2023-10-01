@@ -75,16 +75,15 @@ WSGI_APPLICATION = 'crm.wsgi.application'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'Sql1586744_4',
-        'USER' : 'Sql1586744',
-        'PASSWORD' : 'jehsom-9tyGpu-qikbuc',
-        'HOST' : '89.46.111.110',
-        'PORT' : '3306'
-    }
+'default': {
+'ENGINE': 'django.db.backends.postgresql_psycopg2',
+'NAME': 'Sql1586744_4',
+'USER' : 'Sql1586744',
+'PASSWORD' : 'jehsom-9tyGpu-qikbuc',
+'HOST' : '89.46.111.110',
+'PORT' : '3306'
 }
-
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
